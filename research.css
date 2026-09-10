@@ -31,7 +31,7 @@
 .research-quick-nav {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 14px;
+  gap: 12px;
   padding: 16px 0 4px;
   margin-top: 14px;
   border-top: 1px solid #e2e8f0;
