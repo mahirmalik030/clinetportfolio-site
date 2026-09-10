@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curriculum Design | Dr Hussain Ahmad</title>
+
+  <!-- Google Fonts & Font Awesome Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="curriculum-design.css">
+
+  <link rel="icon" type="image/webp" href="./The+University+of+Adelaide.webp">
+</head>
+<body>
+
+  <!-- Top Header & Navigation -->
+  <header class="argyle-header">
+    <div class="header-container">
+      <div class="site-title">
+        <h1><a href="index.html">Dr Hussain Ahmad</a></h1>
+      </div>
+
+      <button class="menu-toggle" id="mobile-menu" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav-links-wrapper">
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="teaching.html">Teaching</a></li>
+          <li><a href="awards.html">Awards</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="experience.html">Volunteering</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Top Panoramic Banner -->
+  <div class="argyle-banner">
+    <div class="banner-pattern"></div>
+    <div class="banner-overlay-grid"></div>
+  </div>
+
+<main class="page-content">
+  <h1 class="page-title">Curriculum Design</h1>
+  <p class="description">
+    I actively contribute to curriculum design by developing project-based assessments, aligning learning outcomes with industry expectations, and integrating emerging technologies such as Generative AI, Cloud-native systems, and secure software practices into coursework. My aim is to bridge the gap between academic theory and industry requirements.
+  </p>
+  
+  <div class="image-gallery">
+    <img src="./p1.png" alt="Curriculum Planning & Generative AI">
+    <img src="./graph1.png" alt="Cloud-native Systems Architecture">
+    <img src="./p2.png" alt="Secure Software Practices">
+    <img src="./2nd.png" alt="Industry Alignment">
+  </div>
+</main>
+
+<footer class="argyle-footer">
+  <div class="footer-container">
+    <span>&copy; 2026 Dr Hussain Ahmad</span>
+    <span class="footer-divider">&middot;</span>
+    <span>School of Computer and Mathematical Sciences, University of Adelaide</span>
+    <span class="footer-divider">&middot;</span>
+    <a href="contact.html">Contact</a>
+  </div>
+</footer>
+
+<script>
+  const menuToggle = document.getElementById("mobile-menu");
+  const navLinks = document.getElementById("nav-links");
+
+  if (menuToggle && navLinks) {
+    menuToggle.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+  }
+</script>
+
+</body>
+</html>

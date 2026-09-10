@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>R&D Projects | Dr Hussain Ahmad</title>
+
+  <!-- Google Fonts & Font Awesome Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="projects.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/webp" href="./The+University+of+Adelaide.webp">
+</head>
+<body>
+
+  <!-- Top Header & Navigation -->
+  <header class="argyle-header">
+    <div class="header-container">
+      <div class="site-title">
+        <h1><a href="index.html">Dr Hussain Ahmad</a></h1>
+      </div>
+
+      <button class="menu-toggle" id="mobile-menu" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav-links-wrapper">
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="teaching.html">Teaching</a></li>
+          <li><a href="awards.html">Awards</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="experience.html">Volunteering</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Top Panoramic Banner -->
+  <div class="argyle-banner">
+    <div class="banner-pattern"></div>
+    <div class="banner-overlay-grid"></div>
+  </div>
+
+<main class="projects-wrapper">
+
+  <h1 class="page-title">Research & Development Projects</h1>
+
+  <article class="project-card animate">
+    <div class="project-image">
+      <img src="./p1.png" alt="Project image">
+    </div>
+
+    <div class="project-content">
+      <h2>The Future of AI: Exploring the Potential of Large Concept Models</h2>
+      <span class="project-date">Dec 2024</span>
+      <p>
+        This project investigates the limitations of traditional Large Language
+        Models and introduces Large Concept Models (LCMs) as an emerging paradigm
+        for advanced AI reasoning. It highlights abstraction challenges and
+        demonstrates how concept-level representations improve semantic reasoning
+        and contextual understanding across domains.
+      </p>
+      <a href="https://arxiv.org/pdf/2501.05487" target="_blank" class="btn-view">
+        View Project
+      </a>
+    </div>
+  </article>
+
+  <article class="project-card animate">
+    <div class="project-image">
+      <img src="./p2.png" alt="Project image">
+    </div>
+
+    <div class="project-content">
+      <h2>ChatNVD: Advancing Cybersecurity Vulnerability Assessment with LLMs</h2>
+      <span class="project-date">Feb 2024 – Nov 2024</span>
+      <p>
+        ChatNVD explores the application of Large Language Models to improve
+        vulnerability assessment and interpretation by integrating the National
+        Vulnerability Database and delivering context-rich cybersecurity insights.
+      </p>
+      <a href="https://arxiv.org/pdf/2412.04756" target="_blank" class="btn-view">
+        View Project
+      </a>
+    </div>
+  </article>
+
+  <article class="project-card animate">
+    <div class="project-content full">
+      <h2>Smart HPA: A Resource-Efficient Horizontal Pod Auto-scaler</h2>
+      <span class="project-date">Jun 2023 – Dec 2023</span>
+      <p>
+        Smart HPA introduces a resource-efficient auto-scaling framework for
+        microservice architectures operating in constrained environments, enabling
+        coordinated scaling and improved system resilience.
+      </p>
+    </div>
+  </article>
+
+  <article class="project-card animate">
+    <div class="project-content full">
+      <h2>MicroControllers: Securing Microservices with Self-Adaptive Architecture</h2>
+      <span class="project-date">Sep 2023 – Nov 2023</span>
+      <p>
+        This project proposes a microservice-based MAPE-K architecture to overcome
+        the limitations of monolithic self-adaptive cybersecurity frameworks while
+        supporting scalable and autonomous security management.
+      </p>
+    </div>
+  </article>
+
+</main>
+
+<footer class="argyle-footer">
+  <div class="footer-container">
+    <span>&copy; 2026 Dr Hussain Ahmad</span>
+    <span class="footer-divider">&middot;</span>
+    <span>School of Computer and Mathematical Sciences, University of Adelaide</span>
+    <span class="footer-divider">&middot;</span>
+    <a href="contact.html">Contact</a>
+  </div>
+</footer>
+
+<script>
+  const menuToggle = document.getElementById("mobile-menu");
+  const navLinks = document.getElementById("nav-links");
+
+  if (menuToggle && navLinks) {
+    menuToggle.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+  }
+</script>
+</body>
+</html>

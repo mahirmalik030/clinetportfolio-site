@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Me (Interactive) | Dr Hussain Ahmad</title>
+  <meta name="description" content="Explore Dr Hussain Ahmad's research, defense innovation, and impact through interactive perspectives." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="about.css" />
+  <link rel="stylesheet" href="about-variations.css" />
+  <link rel="icon" type="image/png" href="./Adelaide-University-Logo-New.png">
+</head>
+<body>
+
+  <header class="argyle-header">
+    <div class="header-container">
+      <div class="site-title"><h1><a href="index.html">Dr Hussain Ahmad</a></h1></div>
+      <button class="menu-toggle" id="mobile-menu" aria-label="Toggle navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links-wrapper">
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="teaching.html">Teaching</a></li>
+          <li><a href="volunteering.html">Volunteering</a></li>
+          <li><a href="awards.html">Awards</a></li>
+          <li><a href="news.html">Media</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="argyle-banner"><div class="banner-pattern"></div><div class="banner-overlay-grid"></div></div>
+
+  <main class="argyle-main">
+    <div class="layout-grid">
+
+      <aside class="argyle-sidebar">
+        <div class="sidebar-card">
+          <div class="avatar-container">
+            <img src="hussain.jpg" alt="Dr Hussain Ahmad" class="avatar-img" />
+          </div>
+          <div class="profile-info">
+            <h2 class="profile-name">Dr Hussain Ahmad</h2>
+            <div class="profile-title">Researcher, Lecturer and Innovator in Cybersecurity, AI, Software Engineering, and Data Science</div>
+            <div class="profile-affiliation">
+              <img src="./Adelaide-University-Logo-New.png" alt="Adelaide University Logo" />
+              <span>Adelaide University, Australia</span>
+            </div>
+            <hr class="sidebar-divider" />
+            <div class="sidebar-links">
+              <a href="mailto:hussain.ahmad@adelaide.edu.au" class="quick-link-btn">
+                <i class="fa-regular fa-envelope"></i><span>hussain.ahmad@adelaide.edu.au</span>
+              </a>
+            </div>
+            <hr class="sidebar-divider" />
+            <p class="sidebar-statement">Science thrives on collaboration and critical discussion. I'd love to hear from you.</p>
+            <hr class="sidebar-divider" />
+            <div class="social-links-section">
+              <a href="https://www.linkedin.com/in/hussainahmad5/?_l=en_US" target="_blank" rel="noopener noreferrer" class="social-link-item">
+                <span class="social-icon"><i class="fa-brands fa-linkedin"></i></span><span>LinkedIn</span>
+              </a>
+              <a href="https://scholar.google.com.au/citations?user=3p-OUFUAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener noreferrer" class="social-link-item">
+                <span class="social-icon"><i class="fa-solid fa-graduation-cap"></i></span><span>Google Scholar</span>
+              </a>
+              <a href="https://researchers.adelaide.edu.au/profile/hussain.ahmad" target="_blank" rel="noopener noreferrer" class="social-link-item">
+                <span class="social-icon"><i class="fa-solid fa-globe"></i></span><span>Institutional Profile</span>
+              </a>
+              <a href="https://x.com/HussainAhmad_5" target="_blank" rel="noopener noreferrer" class="social-link-item">
+                <span class="social-icon"><i class="fa-brands fa-x-twitter"></i></span><span>X (Twitter)</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <section class="argyle-content">
+
+        <div class="version-switch-bar">
+          <div class="version-switch-title">
+            <i class="fa-solid fa-wand-magic-sparkles" style="color:#2563eb;"></i> 5 Creative Versions:
+          </div>
+          <div class="version-nav-links">
+            <a href="about.html" class="version-btn">① Timeline</a>
+            <a href="about-interactive.html" class="version-btn active">② Interactive</a>
+            <a href="about-magazine.html" class="version-btn">③ Editorial</a>
+            <a href="about-pillars.html" class="version-btn">④ Pillars</a>
+            <a href="about-bento.html" class="version-btn">⑤ Bento Grid</a>
+          </div>
+        </div>
+
+        <!-- Hero -->
+        <div class="about-hero">
+          <div class="hero-tag"><i class="fa-solid fa-layer-group"></i> Version 2 &middot; Interactive Topic Explorer</div>
+          <h1>Explore <span class="gradient-text">My Work</span> Your Way</h1>
+          <p class="hero-lead">
+            Each tab below dives deep into a different dimension of my career. Click any topic to explore — from AI research philosophy and defense innovation to startup ventures and what drives me personally.
+          </p>
+        </div>
+
+        <!-- Interactive Tab Navigation -->
+        <div class="v2-tabs-header" id="tabHeader">
+          <button class="v2-tab-btn active" onclick="showTab('mission', this)">
+            <i class="fa-solid fa-compass"></i> Mission &amp; Vision
+          </button>
+          <button class="v2-tab-btn" onclick="showTab('defense', this)">
+            <i class="fa-solid fa-shield-halved"></i> Defence &amp; Security
+          </button>
+          <button class="v2-tab-btn" onclick="showTab('startups', this)">
+            <i class="fa-solid fa-rocket"></i> AI Ventures
+          </button>
+          <button class="v2-tab-btn" onclick="showTab('roots', this)">
+            <i class="fa-solid fa-industry"></i> Industrial Roots
+          </button>
+          <button class="v2-tab-btn" onclick="showTab('community', this)">
+            <i class="fa-solid fa-users"></i> Community &amp; Partners
+          </button>
+        </div>
+
+        <!-- Panel 1: Mission & Vision -->
+        <div id="tab-mission" class="v2-tab-panel active">
+          <div class="v2-panel-header">
+            <h2>Research Philosophy &amp; Core Mission</h2>
+            <p>My research sits at the productive tension between building things that work perfectly — and understanding exactly how they fail.</p>
+          </div>
+          <div class="v2-panel-body">
+            <p style="font-size:16px; line-height:1.85; color:#1e293b; margin-bottom:20px;">
+              I'm a Lecturer and Researcher at the School of Computer Science and Information Technology, Adelaide University. My work focuses on the co-development, empirical evaluation, and implementation of <strong>AI-driven, self-adaptive, and cyber-resilient software systems</strong> at the intersection of Cyber Security, Software Engineering, and Generative AI.
+            </p>
+            <div class="dual-highlight-grid">
+              <div class="spotlight-box">
+                <h4><i class="fa-solid fa-bullseye"></i> Mission</h4>
+                <p>Pursue multidisciplinary, industry-driven research with solid theoretical foundations — from empirical software engineering and vulnerability mitigation to AI-assisted secure code generation and automated resilience in critical systems.</p>
+              </div>
+              <div class="spotlight-box teal">
+                <h4><i class="fa-solid fa-eye"></i> Vision</h4>
+                <p>Transform next-generation AI and software security from reactive patching into proactive, self-healing, trustworthy computing ecosystems — empowering organizations to harness Generative AI without compromising their digital infrastructure.</p>
+              </div>
+            </div>
+            <div class="story-stats-grid" style="margin-top:20px;">
+              <div class="stat-pill"><div class="stat-number">15+</div><div class="stat-label">R&D Projects Led</div></div>
+              <div class="stat-pill"><div class="stat-number">12+</div><div class="stat-label">Peer-Reviewed Papers</div></div>
+              <div class="stat-pill"><div class="stat-number">4+</div><div class="stat-label">Courses Designed</div></div>
+              <div class="stat-pill"><div class="stat-number">100s</div><div class="stat-label">Students Mentored</div></div>
+            </div>
+            <p style="font-size:15px; color:#475569; line-height:1.75; margin-top:20px;">
+              What keeps me going: a fascination with distributed architectures under adversarial pressure, and the rapid evolution of LLMs that have introduced an entirely new attack surface for software engineering. Every lecture, every paper, and every project is an attempt to close that gap between theoretical promise and deployed security.
+            </p>
+          </div>
+        </div>
+
+        <!-- Panel 2: Defense -->
+        <div id="tab-defense" class="v2-tab-panel">
+          <div class="v2-panel-header">
+            <h2>Defence Innovation &amp; Tactical Cyber Resilience</h2>
+            <p>Working at the edge of autonomous systems and national security — where software failures have real-world consequences.</p>
+          </div>
+          <div class="v2-panel-body">
+            <div class="story-split-grid">
+              <div>
+                <p>
+                  Defense research is unforgiving. The systems I work on cannot afford downtime, cannot wait for a human to respond, and cannot expose their own vulnerabilities. My two major defense contributions:
+                </p>
+                <div class="spotlight-box">
+                  <h4><i class="fa-solid fa-satellite-dish"></i> Adaptive Dynamic Application Orchestrator — A$250,000</h4>
+                  <p>Project Manager for a <strong>Defence Trailblazer &amp; DEWC Services</strong> initiative. We're building an AI-driven orchestration platform that dynamically constructs and deploys mission-critical tactical applications in contested, communications-denied environments.</p>
+                </div>
+                <div class="spotlight-box amber">
+                  <h4><i class="fa-solid fa-network-wired"></i> Command-and-Control Cyber Resilience — A$422,000</h4>
+                  <p>With <strong>DSTG, Cisco, and Cyber Security CRC</strong>, I simulated sophisticated multi-stage cyber-attacks on military C2 networks, identified cascading vulnerability paths, and designed self-adaptive isolation protocols that respond within milliseconds.</p>
+                </div>
+              </div>
+              <div class="story-inline-img">
+                <img src="./defense1.jpg" alt="Defence cyber research simulation" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Panel 3: AI Ventures -->
+        <div id="tab-startups" class="v2-tab-panel">
+          <div class="v2-panel-header">
+            <h2>AI Ventures with Human Impact</h2>
+            <p>The most sophisticated algorithm is meaningless unless it makes someone's life meaningfully better.</p>
+          </div>
+          <div class="v2-panel-body">
+            <p>Over two years in Australia's startup ecosystem, I brought machine learning into contexts where the stakes were deeply personal:</p>
+            <div class="dual-highlight-grid" style="margin: 20px 0;">
+              <div class="chapter-highlight-box">
+                <div class="highlight-box-title"><i class="fa-solid fa-child" style="color:#16a34a;"></i> <strong>Kindship (NDIS Provider)</strong></div>
+                <p>Designed and deployed a machine-learning recommendation engine to connect families of differently abled children with precisely matched therapists — eliminating weeks of frustrating manual searching and improving therapy outcomes through better initial matches.</p>
+              </div>
+              <div class="chapter-highlight-box">
+                <div class="highlight-box-title"><i class="fa-solid fa-plane-arrival" style="color:#2563eb;"></i> <strong>Migrova (Stone &amp; Chalk / Antler)</strong></div>
+                <p>As Chief Project Officer, secured a <strong>A$100,000 Seed-Start grant</strong> from the SA Department of State Development. Led the architectural design and deployment of AI-powered matching infrastructure to help international migrants navigate complex relocation processes.</p>
+              </div>
+            </div>
+            <p style="font-size:15px; color:#475569; line-height:1.75;">
+              Both ventures reinforced a conviction I carry into every research project: when you design for the most constrained users — those with the least margin for error — you tend to build genuinely better technology for everyone.
+            </p>
+          </div>
+        </div>
+
+        <!-- Panel 4: Industrial Roots -->
+        <div id="tab-roots" class="v2-tab-panel">
+          <div class="v2-panel-header">
+            <h2>Where It All Started: High-Precision Industrial Engineering</h2>
+            <p>My engineering instincts didn't begin with code. They started with machines, operators, and the discipline of zero-defect operations.</p>
+          </div>
+          <div class="v2-panel-body">
+            <p>
+              At <strong>Tetra Pak</strong>, I led 20+ technicians across continuous 24/7 shifts on industrial laminator lines — contributing to Industry 4.0 automation initiatives and managing output KPIs under constant operational pressure. At <strong>Prolife Foods</strong> in Australia, I supervised production quality for roaster operations, translating SOPs into real-time operational decisions.
+            </p>
+            <p>
+              What these experiences gave me that formal education couldn't: a visceral understanding of <em>what system failure actually costs</em>, not in abstract metrics, but in halted production, disrupted teams, and missed targets. That understanding became the lens through which I now approach every software system I design or secure.
+            </p>
+            <div class="dual-highlight-grid">
+              <div class="spotlight-box">
+                <h4><i class="fa-solid fa-microchip"></i> Tetra Pak Pakistan (2017–2019)</h4>
+                <p>Team lead for 20+ operators on high-speed laminator lines. Led automation initiatives aligned with Industry 4.0 principles, managing shift KPIs and continuous improvement cycles.</p>
+              </div>
+              <div class="spotlight-box teal">
+                <h4><i class="fa-solid fa-wheat-awn"></i> Prolife Foods Australia (2020)</h4>
+                <p>Supervised roaster machine operations in compliance with Standard Operating Procedures, maintaining quality assurance standards across multi-batch production runs.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Panel 5: Community -->
+        <div id="tab-community" class="v2-tab-panel">
+          <div class="v2-panel-header">
+            <h2>Community Leadership, Advocacy &amp; Global Partners</h2>
+            <p>Research excellence is inseparable from the health and diversity of the community producing it.</p>
+          </div>
+          <div class="v2-panel-body">
+            <p>
+              During my PhD, I served as the elected <strong>HDR (Postgraduate Researchers) Representative</strong> and <strong>GEDI (Gender, Equity, Diversity &amp; Inclusion) Representative</strong>. These weren't ceremonial roles — they meant organizing forums, advocating for candidate wellbeing, and working to dismantle structural barriers for researchers from underrepresented backgrounds.
+            </p>
+            <div class="story-photo-grid">
+              <div class="story-photo-card"><img src="./hdr1_crop1.jpg" alt="HDR Candidate Forum" /><div class="caption">HDR Candidate Forums</div></div>
+              <div class="story-photo-card"><img src="./gedi_crop1.jpg" alt="GEDI Equity Roundtable" /><div class="caption">GEDI Equity &amp; Inclusion</div></div>
+              <div class="story-photo-card"><img src="./super1.jpg" alt="Student Supervision" /><div class="caption">Student Supervision</div></div>
+            </div>
+            <h4 style="font-size:16px; color:#0f172a; margin: 24px 0 14px;">Industry &amp; Government Ecosystem:</h4>
+            <div class="partners-grid">
+              <div class="partner-logo-card"><img src="logo_cscrc.png" alt="CSCRC" /></div>
+              <div class="partner-logo-card"><img src="logo_dsd_sa.png" alt="DSD SA" /></div>
+              <div class="partner-logo-card"><img src="logo_stone_chalk.png" alt="Stone & Chalk" /></div>
+              <div class="partner-logo-card"><img src="logo_data61.png" alt="Data61" /></div>
+              <div class="partner-logo-card"><img src="logo_cisco.png" alt="Cisco" /></div>
+              <div class="partner-logo-card"><img src="logo_defence.png" alt="Defence" /></div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+    </div>
+  </main>
+
+  <footer class="argyle-footer">
+    <div class="footer-container">
+      <span>&copy; 2026 Dr Hussain Ahmad</span>
+      <span class="footer-divider">&middot;</span>
+      <span>Lecturer &amp; Researcher, Adelaide University</span>
+      <span class="footer-divider">&middot;</span>
+      <a href="contact.html">Contact</a>
+    </div>
+  </footer>
+
+  <script>
+    function showTab(tabId, btn) {
+      document.querySelectorAll('.v2-tab-panel').forEach(p => p.classList.remove('active'));
+      document.querySelectorAll('.v2-tab-btn').forEach(b => b.classList.remove('active'));
+      const panel = document.getElementById('tab-' + tabId);
+      if (panel) panel.classList.add('active');
+      if (btn) btn.classList.add('active');
+    }
+    const menuToggle = document.getElementById("mobile-menu");
+    const navLinks = document.getElementById("nav-links");
+    if (menuToggle && navLinks) {
+      menuToggle.addEventListener("click", () => navLinks.classList.toggle("active"));
+    }
+  </script>
+</body>
+</html>
