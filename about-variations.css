@@ -102,7 +102,7 @@
 .v2-tab-btn {
   background: none;
   border: none;
-  font-family: "Avenir", "Avenir Next", "Century Gothic", "Trebuchet MS", sans-serif;
+  font-family: "Aptos", "Aptos Display", "Segoe UI", -apple-system, BlinkMacSystemFont, "Calibri", "Helvetica Neue", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 600;
   color: #64748b;
@@ -218,7 +218,7 @@
   padding-bottom: 4px;
   color: #1e3a8a;
   font-weight: 800;
-  font-family: "Avenir", "Avenir Next", "Century Gothic", "Trebuchet MS", sans-serif;
+  font-family: "Aptos", "Aptos Display", "Segoe UI", -apple-system, BlinkMacSystemFont, "Calibri", "Helvetica Neue", "Arial", sans-serif;
 }
 
 .v3-body-text {
@@ -250,7 +250,7 @@
   position: absolute;
   top: -20px;
   left: 0;
-  font-family: "Avenir", "Avenir Next", "Century Gothic", "Trebuchet MS", sans-serif;
+  font-family: "Aptos", "Aptos Display", "Segoe UI", -apple-system, BlinkMacSystemFont, "Calibri", "Helvetica Neue", "Arial", sans-serif;
   line-height: 1;
 }
 

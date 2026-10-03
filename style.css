@@ -4,7 +4,7 @@
    ========================================================================== */
 
 :root {
-  --blt-font-base: "Avenir", "Avenir Next", "Century Gothic", "Trebuchet MS", sans-serif;
+  --blt-font-base: "Aptos", "Aptos Display", "Segoe UI", -apple-system, BlinkMacSystemFont, "Calibri", "Helvetica Neue", "Arial", sans-serif;
   --theme-primary: #1e3a8a;
   --theme-primary-hover: #1d4ed8;
   --theme-accent: #2563eb;
