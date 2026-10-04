@@ -19,8 +19,21 @@
 
 .pub-page-subtitle {
   font-size: 15.5px;
-  color: #64748b;
+  color: #000000;
   line-height: 1.6;
+}
+
+.research-page-desc,
+.research-page-desc p {
+  text-align: justify;
+}
+
+.research-page-desc,
+.research-page-desc p,
+.research-page-desc ol,
+.research-page-desc li,
+.research-page-desc strong {
+  color: #000000 !important;
 }
 
 /* Publication Section Blocks */
